@@ -9,7 +9,7 @@ The player chooses Download and set up, then Start game after successful install
 1. Download the **Windows x64 ZIP** from [Preview 3](https://github.com/dmitryalexander/yousei-no-tabi/releases/tag/v0.1.0-preview.3),
    extract it completely, and run `Play Yousei no Tabi.cmd`.
 2. Supply your supported ROM when prompted. Finish extraction before using visual setup.
-3. Press **F1 / Escape** and open **Enhancements â†’ Lighting Engine â†’ Set up recommended visuals...**.
+3. Press **F1 / Escape** and open **Enhancements → Lighting Engine → Set up recommended visuals...**.
 4. Save and close the game. The separate setup window can stay open.
 5. Click **Download and set up**. It needs about 1.3 GB of downloads and 12 GiB free
    on the game drive. No system Python installation or manual mod copying is required.
