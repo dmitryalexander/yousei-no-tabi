@@ -1,4 +1,4 @@
-# Tested Windows preview — 2026-10-21
+# Tested Windows preview â€” 2026-10-21
 
 The lighting-only executable and clean port archive were built successfully in
 Release mode with Visual Studio 2022, using local dependency sources and the
@@ -70,9 +70,9 @@ Preview 2 native-tested executable SHA-256: `230ac2487a8f429ab851d33acc04640cdb9
 
 The Windows game and visual setup companion were rebuilt with the new fairy icon.
 The artwork uses the reference app family's exact amber/dark colors and 16-unit
-rounded stroke on a 256-unit canvas. Its 241 × 241 alpha bounds match Pinful's.
+rounded stroke on a 256-unit canvas. Its 241 Ã— 241 alpha bounds match Pinful's.
 The ICO contains 16/20/24/32/40/48/64/128/256-pixel frames, all checked for valid
-transparency and the expected amber. A comparison with ScratchPad, Individuous
+transparency and the expected amber. A comparison with Everywhere, Individuous
 and Pinful was inspected at taskbar sizes.
 
 Icons extracted from both finished executables show the new fairy. The companion's
