@@ -9,7 +9,7 @@
 | `brdf.bin` | Locally generated split-sum BRDF integration lookup |
 | `jelly-detail.bin` | Locally generated seamless Godot FastNoiseLite normal texture; seed 4182 |
 | `shadow.hlsl`, `navi-shadow.hlsl`, `post.hlsl` | Custom lighting shader source from this renderer |
-| `soh/yousei-lighting.ico` | Local Lighting Lab eye icon; replaces the private Triforce branding |
+| `soh/yousei-lighting.ico`, `soh/yousei-fairy.svg` | Fairy based on the user's four-wing sketch; matches the user's ScratchPad/Individuous/Pinful amber, dark fill and rounded stroke. Generated locally by `scripts/build_fairy_icon.ps1`; also embedded in the visual setup companion. |
 
 Primary asset references:
 

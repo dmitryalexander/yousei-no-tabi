@@ -53,3 +53,9 @@ python scripts/audit_release.py .
 The content audit is a packaging guard; it does not replace build or gameplay
 validation. Its file hashes can be saved with `--output audit.json` outside the
 source tree. Upstream build documentation remains in `BUILDING.md` for reference.
+
+The fairy icon source is `soh/yousei-fairy.svg`. Regenerate its multiresolution
+Windows ICO with `powershell -File scripts/build_fairy_icon.ps1`. The generator
+uses the reference app family palette and 16-unit rounded stroke on a 256-unit
+grid, with 16/20/24/32/40/48/64/128/256-pixel frames. Both the game and visual setup
+companion embed the same ICO.

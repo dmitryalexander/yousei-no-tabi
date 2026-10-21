@@ -65,3 +65,18 @@ a whole-game walkthrough, steady target FPS, or identical personal character mod
 
 
 Preview 2 native-tested executable SHA-256: `230ac2487a8f429ab851d33acc04640cdb91e0ae33339dbf435ed7526e11508a`.
+
+## Fairy icon refresh (Preview 3)
+
+The Windows game and visual setup companion were rebuilt with the new fairy icon.
+The artwork uses the reference app family's exact amber/dark colors and 16-unit
+rounded stroke on a 256-unit canvas. Its 241 × 241 alpha bounds match Pinful's.
+The ICO contains 16/20/24/32/40/48/64/128/256-pixel frames, all checked for valid
+transparency and the expected amber. A comparison with ScratchPad, Individuous
+and Pinful was inspected at taskbar sizes.
+
+Icons extracted from both finished executables show the new fairy. The companion's
+managed icon resource matches the full source ICO byte-for-byte, and its window
+Icon property was instantiated and inspected. This changes branding and icon
+build dependencies; gameplay and installer behavior retain the preceding preview's
+validation. Whole-game gameplay tests were not repeated for this artwork change.

@@ -44,6 +44,9 @@ public sealed class VisualSetup : Form {
     public VisualSetup(string selectedRoot) {
         root = selectedRoot; source = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "visual-setup");
         Text = "Yousei no Tabi - Recommended visuals";
+        using (var stream = typeof(VisualSetup).Assembly.GetManifestResourceStream("YouseiFairy")) {
+            if (stream != null) using (var icon = new Icon(stream)) Icon = (Icon)icon.Clone();
+        }
         ClientSize = new Size(720, 624); MinimumSize = new Size(730, 654);
         StartPosition = FormStartPosition.CenterScreen; Font = new Font("Segoe UI", 10);
         AutoScaleMode = AutoScaleMode.Dpi;

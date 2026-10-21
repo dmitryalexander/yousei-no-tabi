@@ -454,7 +454,7 @@ if(CMAKE_SYSTEM_NAME MATCHES "Windows")
         COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_BINARY_DIR}/bin/$<UPPER_CASE:$<CONFIG>>"
         COMMAND powershell.exe -NoProfile -ExecutionPolicy Bypass -File
             "${CMAKE_SOURCE_DIR}/scripts/build_visual_setup.ps1" -Output "${YOUSEI_VISUAL_SETUP}"
-        DEPENDS tools/VisualSetup.cs scripts/build_visual_setup.ps1
+        DEPENDS tools/VisualSetup.cs scripts/build_visual_setup.ps1 soh/yousei-lighting.ico
         VERBATIM COMMENT "Building recommended visual setup companion")
     add_custom_target(YouseiVisualSetup ALL DEPENDS "${YOUSEI_VISUAL_SETUP}")
     add_dependencies(soh YouseiVisualSetup)

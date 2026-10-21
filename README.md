@@ -1,4 +1,4 @@
-# Yousei no Tabi — Lighting Engine
+# Yousei no Tabi â€” Lighting Engine
 
 A Ship of Harkinian fork focused on dynamic lighting, real shadows, material
 effects, and preparation of textures and shaders before they are needed.
@@ -25,13 +25,13 @@ or a fixed frame rate on every system.
 
 ### Windows quick start
 
-1. Open [Preview 2](https://github.com/dmitryalexander/yousei-no-tabi/releases/tag/v0.1.0-preview.2)
-   and download **yousei-no-tabi-Windows-x64-v0.1.0-preview.2.zip**. Choose the Windows
+1. Open [Preview 3](https://github.com/dmitryalexander/yousei-no-tabi/releases/tag/v0.1.0-preview.3)
+   and download **yousei-no-tabi-Windows-x64-v0.1.0-preview.3.zip**. Choose the Windows
    ZIP under Assets; GitHub's Source code ZIP is for building the program yourself.
 2. Extract the **entire ZIP** into a new folder. Run `Play Yousei no Tabi.cmd` or
    `yousei-no-tabi.exe`, then follow the first-run prompt to extract your supported ROM.
 3. For the recommended HD look, press **F1 / Escape**, then open
-   **Enhancements → Lighting Engine → Set up recommended visuals...**.
+   **Enhancements â†’ Lighting Engine â†’ Set up recommended visuals...**.
 4. The setup window opens separately. **Save and close the game**, leaving setup open.
 5. Click **Download and set up**. Allow about **1.3 GB of downloads** and **12 GiB of
    free disk space**. Wait for the successful installation message, then click **Start game**.
@@ -65,14 +65,14 @@ from an existing Ship of Harkinian installation.
 | Numpad + / - | Adjust FPS target: 7, 15, 30, 60, 120 |
 | Numpad * | Toggle the small measured-FPS/target counter |
 | Numpad . | Toggle VSync |
-| F1 / Escape | Open the upstream menu; see Enhancements → Lighting Engine |
+| F1 / Escape | Open the upstream menu; see Enhancements â†’ Lighting Engine |
 
 Tab retains the upstream optional mod toggle in this edition; it does not switch
 Japanese learning modes. Simulation timing is independent of a low FPS target.
 
 ## Optional textures
 
-On Windows, open **Enhancements → Lighting Engine → Set up recommended visuals...**.
+On Windows, open **Enhancements â†’ Lighting Engine â†’ Set up recommended visuals...**.
 Save and close the game, then choose **Download and set up** in the companion window.
 It downloads the pinned Reloaded HD and selected Djipi packs from their official
 sources, generates the town/shop repairs locally, and applies the reference lighting
