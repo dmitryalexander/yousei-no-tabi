@@ -1,0 +1,48 @@
+# Building the lighting-only edition
+
+The source includes the modified libultraship and pinned Torch trees. No Git
+submodule initialization is needed for those components. Additional dependencies
+are fetched by CMake unless supplied locally.
+
+On Windows use Visual Studio 2022 C++ build tools, Windows SDK, CMake 3.26+,
+Git and Python 3. Run from the repository root:
+
+```powershell
+cmake -S . -B build -G "Visual Studio 17 2022" -A x64
+cmake --build build --config Release --target soh GenerateSohOtr --parallel 2
+```
+
+The executable is named `yousei-no-tabi.exe`. `GenerateSohOtr` builds the port's
+custom asset archive from this source. Do not reuse the private Toki no Fue
+executable or archive, which contain an excluded test actor and textures.
+
+For preinstalled dependencies, configure with `-DUSE_AUTO_VCPKG=OFF` and provide
+your toolchain/package paths. CMake's standard `FETCHCONTENT_SOURCE_DIR_<NAME>`
+options support local dependency sources. `STB_IMAGE_HEADER` accepts a local
+copy of the pinned stb_image header. Private machine paths are not part of the
+public project configuration.
+
+Package explicit clean-build inputs, replacing the example paths with the
+actual build outputs. Add `--dll path/to/library.dll` for each required shared
+runtime dependency from that same build:
+
+```powershell
+python scripts/package_windows.py --exe build/bin/RELEASE/yousei-no-tabi.exe --port-archive build/soh/soh.o2r --output ../packages/yousei-no-tabi-Windows-x64.zip
+python scripts/audit_release.py ../packages/yousei-no-tabi-Windows-x64.zip --package
+```
+
+The packager includes default settings, lighting assets, extraction recipes and
+notices. It does not copy any player runtime, mods, saves or game archives.
+For direct development runs, copy the contents of `runtime/` beside the built
+executable and keep the build's generated `assets/` extraction recipes there.
+Never overwrite a player's existing config with the defaults during an update.
+
+Before publishing source:
+
+```powershell
+python scripts/audit_release.py .
+```
+
+The content audit is a packaging guard; it does not replace build or gameplay
+validation. Its file hashes can be saved with `--output audit.json` outside the
+source tree. Upstream build documentation remains in `BUILDING.md` for reference.

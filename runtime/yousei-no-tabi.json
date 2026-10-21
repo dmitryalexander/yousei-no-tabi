@@ -1,0 +1,34 @@
+{
+  "Window": {"Backend": {"Id": 1, "Name": "DirectX 11"}},
+  "CVars": {
+    "gSettings": {
+      "GraphicsMode": 3,
+      "GraphicsTargetFPS": 60,
+      "ShowGraphicsFPS": 1,
+      "VsyncEnabled": 0,
+      "AltAssets": 1
+    },
+    "gEnhancements": {
+      "3DSceneRender": 0,
+      "DisableFixedCamera": 0,
+      "MaterialRelief": {"Normals": 1, "Parallax": 1},
+      "LightingLab": {
+        "Enabled": 1,
+        "SceneProfiles": 1,
+        "OutdoorNishita": 1,
+        "ForestHDRI": 1,
+        "InteriorLighting": 1,
+        "FollowTime": 1,
+        "FairyLights": 1,
+        "NaviShadows": 1,
+        "RealLightCards": 1,
+        "OffCameraShadows": 1,
+        "HDRI": 1,
+        "Materials": 1,
+        "SunShadows": 1,
+        "Grading": 1,
+        "Glow": 1
+      }
+    }
+  }
+}
