@@ -27,7 +27,7 @@ actual build outputs. Add `--dll path/to/library.dll` for each required shared
 runtime dependency from that same build:
 
 ```powershell
-python scripts/package_windows.py --exe build/bin/RELEASE/yousei-no-tabi.exe --port-archive build/soh/soh.o2r --output ../packages/yousei-no-tabi-Windows-x64.zip
+python scripts/package_windows.py --exe build/bin/RELEASE/yousei-no-tabi.exe --port-archive build/soh/soh.o2r --visual-setup build/bin/RELEASE/yousei-visual-setup.exe --output ../packages/yousei-no-tabi-Windows-x64.zip
 python scripts/audit_release.py ../packages/yousei-no-tabi-Windows-x64.zip --package
 ```
 
@@ -36,6 +36,13 @@ notices. It does not copy any player runtime, mods, saves or game archives.
 For direct development runs, copy the contents of `runtime/` beside the built
 executable and keep the build's generated `assets/` extraction recipes there.
 Never overwrite a player's existing config with the defaults during an update.
+
+The Windows build also compiles the .NET Framework visual setup companion from
+`tools/VisualSetup.cs`. It requires the Windows .NET Framework 4.x compiler.
+To build the helper separately, run `scripts/build_visual_setup.ps1 -Output path/to/yousei-visual-setup.exe`.
+It uses Windows Forms and obtains a pinned isolated Python runtime only when the
+player starts setup; no system Python or pip installation is needed.
+Installer regression checks: `python tests/test_visual_setup.py`.
 
 Before publishing source:
 

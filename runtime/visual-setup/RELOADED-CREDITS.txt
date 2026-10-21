@@ -1,0 +1,188 @@
+Author: GhostlyDark
+Last Updated: 2025-04-13
+Release: v11.0.0
+
+Website:
+https://evilgames.eu/texture-packs/oot-reloaded.htm
+
+GitHub:
+https://github.com/GhostlyDark/OoT-Reloaded
+https://github.com/GhostlyDark/OoT-Reloaded-Dolphin
+https://github.com/GhostlyDark/OoT-Reloaded-SoH
+
+
+
+===========
+= Sources =
+===========
+
+Art-Does-Not-Compute's Link Skin Pack 
+https://gamebanana.com/skins/175701 
+
+BLUEamnesiac's Artwork
+https://www.deviantart.com/blueamnesiac/gallery/30516496/cg-art 
+
+Djipi's OoT 3DS 
+http://www.emutalk.net/threads/56438-2016-OOT-3DS-Pack-for-GlideN64
+
+Djipi's OoT Celda 
+http://www.emutalk.net/threads/56436-2016-OOT-Cel-Pack-for-GlideN64
+
+Federelli's OoT Pack 
+http://www.emutalk.net/threads/26320-Federelli-s-Retexture-Pack-for-Zelda-OOT-and-MQ
+
+Nerrel's MM N64HD 
+http://www.emutalk.net/threads/56677-Majora-s-Mask-N64HD-Project
+
+OoT Community Retexture 
+http://www.emutalk.net/threads/55307-Zelda-Ocarina-of-time-Community-Retexture-Project-V7
+
+p3st's Mario 64 HD Texture Project 
+https://github.com/p3st-textures/p3st-Texture_pack
+
+Phantom7's OoT Pack 
+http://www.emutalk.net/threads/51255-Phantom7-s-Ocarina-of-Time-Hi-Res-Texture-Pack
+
+Pietschie & Bad Randolph's Super Smash Bros. HD
+http://www.emutalk.net/threads/44911-Pietschie-amp-Bad-Randolphs-Super-Smash-Bros-HD
+
+Poke Headroom's Render96 HD 
+https://github.com/pokeheadroom/RENDER96-HD-TEXTURE-PACK
+
+SM64 Redrawn
+https://github.com/TechieAndroid/sm64redrawn
+
+tao's Zelda Games Japanese HD Fonts for Dolphin
+https://forums.dolphin-emu.org/Thread-zelda-games-japanese-hd-fonts
+
+Velgasor's OoT 3D Pack
+https://www.tapatalk.com/groups/zelda64/oot-zelda-ocarina-of-time-3d-texture-pack-project--t194.html
+
+Zeth Alkar's Pack
+https://emulationking.com/zeth-alkars-ocarina-time-texture-pack
+
+
+
+=================
+= Other Sources =
+=================
+
+Community: Chinese text typed out by Kaoffie
+https://github.com/Kaoffie 
+
+Community: Chinese text quality control by Darth-Koopa
+https://github.com/Darth-Koopa
+
+Icon: Blue Flame (used for custom model Kristin)
+https://www.psdgraphics.com/psd/blue-flame-icon-psd/
+
+Icon: Fire Medallion Vector
+https://www.deviantart.com/albaturd/art/Zelda-Ocarina-of-Time-medallion-vectors-441312034
+
+Icon: Gerudo Symbols
+https://zelda.fandom.com/wiki/Crest_of_the_Gerudo
+
+Logo: Nintendo
+https://logos-download.com/7890-nintendo-logo-download.html
+
+Font:
+Chiaro Std B
+
+Font:
+KokinEdo Std EB
+
+Font:
+RocknRoll Std Semi-Bold
+
+Font:
+RodinPro B
+
+Font: Source Han Sans
+https://github.com/adobe-fonts/source-han-sans
+
+Font: Source Han Serif
+https://github.com/adobe-fonts/source-han-serif
+
+Texture:
+3DS Magic Bar, HUD Buttons and Hearts, Text Box Background by Pizza
+
+Texture: Abello World Atlas by Syeo
+https://www.deviantart.com/syeo/art/Abello-World-Atlas-864142992
+
+Texture: Amara's Shield, custom Hylian Shield and Master Sword by Skilar
+https://skilarmbabcock.wixsite.com/skilarmodding
+
+Texture:
+Custom chests, crates and pots by Asra
+
+Texture:
+Custom Link hair by Third M
+
+Texture: Custom Shields by SanguinettiMods
+https://sites.google.com/site/sanguinettimods/zelda-modding/textures/shields
+
+Texture:
+Doors, fences and environmental textures by Goodland
+
+Texture: Dungeon Map (pause screen background) by turpinator
+https://www.emutalk.net/threads/zelda-ocarina-of-time-community-retexture-project-v7.55307/page-14#post-466721
+
+Texture:
+Environmental textures by GlennianHeroes
+
+Texture:
+Forest Temple sky by Evanlyn
+
+Texture:
+Gerudo Training Ground door by YaBoiMikey
+
+Texture:
+Gerudo Training Ground wall symbol by Christopher
+
+Texture:
+Golden chest edit by Bighead
+
+Texture:
+Grayscale water texture by toonjoey
+
+Texture:
+Hylian Shield by drihscol
+
+Texture:
+Inside Ganon's Castle floor and pillar by MelonSpeedruns
+
+Texture: iQue letters by Darth-Koopa
+https://github.com/Darth-Koopa
+
+Texture:
+Item icons and environmental textures by Batts
+
+Texture:
+Kokiri Sword handle and sheath by Kooloo-Limpah!
+
+Texture:
+Inside Ganon's Castle carpet, Prescription and Zelda's Letter by GabiShy
+
+Texture: The Missing Link pause screen background by Juan Jesus Tovar
+https://www.youtube.com/@juanjesustovar3466
+
+Texture:
+Triforce Hunt icon by James
+
+Texture:
+Widescreen backgrounds (vanilla) by CYB3RTR0N and ShadowOne333
+
+Texture:
+Wii Home Menu textures by Matteoki
+
+
+
+==================
+= Special Thanks =
+==================
+
+Admentus: Providing textures and quality control
+https://forums.dolphin-emu.org/User-admentus
+
+Nerrel: Providing textures
+http://www.emutalk.net/members/116669-Nerrel

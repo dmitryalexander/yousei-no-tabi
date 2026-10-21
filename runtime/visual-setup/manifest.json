@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "profile": "Recommended lighting and HD backgrounds",
+  "settings": {
+    "gEnhancements.LightingLab.BackgroundNormalStrength": 1.0,
+    "gEnhancements.LightingLab.BackgroundNormals": 1,
+    "gEnhancements.LightingLab.BackgroundParallax": 1,
+    "gEnhancements.LightingLab.BackgroundParallaxDepth": 0.008,
+    "gEnhancements.LightingLab.Contrast": 1.19,
+    "gEnhancements.LightingLab.Enabled": 1,
+    "gEnhancements.LightingLab.Exposure": -0.7,
+    "gEnhancements.LightingLab.FairyBrightness": 1.8,
+    "gEnhancements.LightingLab.FairyLights": 1,
+    "gEnhancements.LightingLab.FairyNightOnly": 0,
+    "gEnhancements.LightingLab.FairyRange": 450.0,
+    "gEnhancements.LightingLab.FollowTime": 1,
+    "gEnhancements.LightingLab.ForestHDRI": 1,
+    "gEnhancements.LightingLab.Gamma": 1.05,
+    "gEnhancements.LightingLab.Glow": 1,
+    "gEnhancements.LightingLab.GlowStrength": 0.15,
+    "gEnhancements.LightingLab.GlowThreshold": 0.84,
+    "gEnhancements.LightingLab.Grading": 1,
+    "gEnhancements.LightingLab.HDRI": 1,
+    "gEnhancements.LightingLab.HDRIStrength": 0.14,
+    "gEnhancements.LightingLab.InteriorLighting": 1,
+    "gEnhancements.LightingLab.JellyShader": 1,
+    "gEnhancements.LightingLab.Materials": 1,
+    "gEnhancements.LightingLab.NaviShadows": 1,
+    "gEnhancements.LightingLab.OffCameraShadows": 1,
+    "gEnhancements.LightingLab.OutdoorNishita": 1,
+    "gEnhancements.LightingLab.Roughness": 0.65,
+    "gEnhancements.LightingLab.Saturation": 1.03,
+    "gEnhancements.LightingLab.SceneProfiles": 1,
+    "gEnhancements.LightingLab.ShadowDistance": 839.62,
+    "gEnhancements.LightingLab.ShadowStrength": 1.0,
+    "gEnhancements.LightingLab.Specular": 0.5,
+    "gEnhancements.LightingLab.SunElevation": 36.56,
+    "gEnhancements.LightingLab.SunShadows": 1,
+    "gEnhancements.LightingLab.SunStrength": 0.37,
+    "gEnhancements.MaterialRelief.NormalStrength": 0.69,
+    "gEnhancements.MaterialRelief.Normals": 1,
+    "gEnhancements.MaterialRelief.Parallax": 1,
+    "gEnhancements.MaterialRelief.ParallaxDepth": 0.04,
+    "gEnhancements.3DSceneRender": 1,
+    "gEnhancements.DisableFixedCamera": 1,
+    "gSettings.AltAssets": 1,
+    "gSettings.GraphicsMode": 3
+  },
+  "packs": [
+    {
+      "id": "reloaded",
+      "title": "OoT Reloaded v11.0.0 HD",
+      "page": "https://evilgames.eu/texture-packs/oot-reloaded.htm",
+      "url": "https://evilgames.eu/files/texture-packs/oot-reloaded-v11.0.0-soh-o2r-hd.7z",
+      "filename": "oot-reloaded-v11.0.0-soh-o2r-hd.7z",
+      "size": 626160013,
+      "sha256": "a6a551e880739de7f5313888f6cf4eea2eb9d2f04274697fe8ad524ea3c30161",
+      "format": "7z",
+      "outputs": [
+        {
+          "name": "OoT_Reloaded_v11.0.0_HD.o2r",
+          "size": 4062463848,
+          "sha256": "988f0e49c3e46a169c21c9c510a7ebf9b5d17a3ba660ca06721f6e2a2804ee07"
+        }
+      ]
+    },
+    {
+      "id": "djipi",
+      "title": "Djipi's 3DS Experience 6.0.2 (selected files)",
+      "page": "https://gamebanana.com/mods/477979",
+      "url": "https://gamebanana.com/dl/1810733",
+      "filename": "djipi_s_3ds_experience_tot_fix.zip",
+      "size": 654820398,
+      "sha256": "02ff6f7ecfddab85dbe33925ae23a68b76c13d1cef6dc27b82546075cd262404",
+      "format": "zip",
+      "outputs": [
+        {
+          "name": "Djipi's 3DE - 03 Objects Animals.otr",
+          "size": 509444,
+          "sha256": "40984c02cd9d5190e5e84487abc8d5117ec64540a178bda1304bc3a720bbc53b"
+        },
+        {
+          "name": "Djipi's 3DE - 04 Objects Animals Textures (3DS).otr",
+          "size": 569737,
+          "sha256": "1f13e7be1927231dc56f1c36fd934cc5b09e76477be988a76cea946c344bb900"
+        },
+        {
+          "name": "Djipi's 3DE - 05 Objects Inventory.otr",
+          "size": 993638,
+          "sha256": "56bd1f118b11e181615550653bdf552f9ded37c674eed1bb317d5247b95d6aae"
+        },
+        {
+          "name": "Djipi's 3DE - 06 Objects Inventory Textures (3DS).otr",
+          "size": 406277,
+          "sha256": "7279337b367f66062aecbe7c64f03ec358f2237dd923be5d69d0c6ee2076dc1a"
+        },
+        {
+          "name": "Djipi's 3DE - 11 Objects NPC.otr",
+          "size": 3233229,
+          "sha256": "65a1ae05c4a7bfae3513f7c5fe52b967ce09ff6c6116ece6a0aa21f1bc12b713"
+        },
+        {
+          "name": "Djipi's 3DE - 12 Objects NPC Textures(3DS).otr",
+          "size": 4419453,
+          "sha256": "5b04c304a986a17ca20fa8b1cdc77a422c82cc65b35920dc569ae46e5207d408"
+        },
+        {
+          "name": "Djipi's 3DE - 13 Objects Ennemies.otr",
+          "size": 1611235,
+          "sha256": "3be9d69bb301ae527670e25f353175deaa965958d147f8625768544aa401605b"
+        },
+        {
+          "name": "Djipi's 3DE - 14 Objects Ennemies Textures(3DS).otr",
+          "size": 1439861,
+          "sha256": "b95e23dec787f0452de6e63877d0f72a7c6a64506ccf3caa8d1e071962466ac3"
+        },
+        {
+          "name": "Djipi's 3DE - 15 Objects BOSS.otr",
+          "size": 1312889,
+          "sha256": "5afd460e69bb327529860ed9a05fb4ee3965bcb76b5546ca1b8dd7923325cc8d"
+        },
+        {
+          "name": "Djipi's 3DE - 16 Objects BOSS Textures(3DS).otr",
+          "size": 1354863,
+          "sha256": "c1232732c98c4c0fd81b1e5c7580bc84b83563696038dcf9bc7dead87826a943"
+        },
+        {
+          "name": "Djipi's 3DE - 26 Background 3DS.otr",
+          "size": 6235188,
+          "sha256": "0cdbffba937a318fd925579a4d15505b5480549bf9d8d1335427d9cf4afaecc7"
+        },
+        {
+          "name": "Djipi's 3DE - 27 Background Textures.otr",
+          "size": 14053469,
+          "sha256": "ac7a24c62f20d73611511b34265cd5229acad0926ed01e5f39c85db1a2043ddd"
+        },
+        {
+          "name": "Djipi's 3DE - 32 Background Full 3D (OPTIONAL).otr",
+          "size": 4240288,
+          "sha256": "983acd91c51542c181dc2801d7076609cf427ecad94881ebd12eec1bc7963449"
+        },
+        {
+          "name": "Djipi's 3DE - 33 Background Full 3D Textures (OPTIONAL).otr",
+          "size": 9649830,
+          "sha256": "ed9144361547c8f8511bc58ecc1a79fa8682d2f2d7e8c1180118bac5a62883b3"
+        }
+      ]
+    }
+  ]
+}

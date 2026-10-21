@@ -14,6 +14,10 @@
 #include <libultraship/bridge/consolevariablebridge.h>
 #include <soh/ResourceManagerHelpers.h>
 #include "soh/ShipInit.hpp"
+#ifdef _WIN32
+#include <windows.h>
+#include <shellapi.h>
+#endif
 
 extern "C" {
 #include "functions.h"
@@ -214,6 +218,29 @@ void SohMenu::AddMenuEnhancements() {
         .Options(FloatSliderOptions().Min(0.0f).Max(0.08f).DefaultValue(0.035f));
     AddSidebarEntry("Enhancements","Lighting Engine",2);
     WidgetPath labPath={"Enhancements","Lighting Engine",SECTION_COLUMN_1};
+#ifdef _WIN32
+    AddWidget(labPath, "Set up recommended visuals...", WIDGET_BUTTON)
+        .RaceDisable(false)
+        .Callback([](WidgetInfo& info) {
+            wchar_t executable[MAX_PATH];
+            if (!GetModuleFileNameW(nullptr, executable, MAX_PATH)) return;
+            const auto helper = std::filesystem::path(executable).parent_path() / "yousei-visual-setup.exe";
+            const auto root = std::filesystem::absolute(Ship::Context::GetRawInstance()->GetAppDirectoryPath());
+            if (std::filesystem::exists(helper)) {
+                // Keep the game open so the player can save. The companion refuses
+                // installation until the game closes and backs up mods/settings.
+                std::wstring argument = L"--root \"" + (root / ".").wstring() + L"\"";
+                const auto result = ShellExecuteW(nullptr, L"open", helper.c_str(), argument.c_str(),
+                                                  helper.parent_path().c_str(), SW_SHOWNORMAL);
+                if (reinterpret_cast<INT_PTR>(result) > 32) return;
+            }
+            SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Visual setup unavailable",
+                "Keep yousei-visual-setup.exe and the visual-setup folder beside the game executable. "
+                "Save and close the game before installing recommended visuals.", nullptr);
+        })
+        .Options(ButtonOptions().Tooltip("Opens setup for official HD pack downloads, repaired backgrounds, "
+            "and the recommended lighting profile. Save and close the game before installing."));
+#endif
     auto labCheck=[&](const char* label,const char* key,bool value=true) {
         AddWidget(labPath,label,WIDGET_CVAR_CHECKBOX).CVar(key)
             .RaceDisable(false).Options(CheckboxOptions().DefaultValue(value));

@@ -3,8 +3,8 @@ from pathlib import Path
 import argparse, hashlib, json, re, sys, zipfile
 from concurrent.futures import ThreadPoolExecutor
 
-BAD_SUFFIXES={'.z64','.n64','.v64','.nes','.sfc','.gba','.nds','.otr','.sav','.sra','.pdb','.mp3','.ogg','.wav'}
-BAD_DIRS={'.git','mods','mods-unused','learning-data','save','saves','cache','logs','records','checkpoints'}
+BAD_SUFFIXES={'.z64','.n64','.v64','.nes','.sfc','.gba','.nds','.otr','.sav','.sra','.pdb','.mp3','.ogg','.wav','.pyc','.pyo'}
+BAD_DIRS={'.git','mods','mods-unused','learning-data','save','saves','cache','logs','records','checkpoints','.visual-setup','visual-downloads'}
 SECRETS=re.compile(rb'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\bgh[pousr]_[A-Za-z0-9]{30,}\b|\bgithub_pat_[A-Za-z0-9_]{40,}\b')
 # StormLib intentionally embeds Blizzard's publicly documented weak MPQ signing
 # key. Allow only the byte-exact pinned upstream file, never a general key match.

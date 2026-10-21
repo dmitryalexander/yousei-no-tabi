@@ -8,6 +8,7 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument('--exe',type=Path,required=True)
     p.add_argument('--port-archive',type=Path,required=True)
+    p.add_argument('--visual-setup',type=Path,required=True)
     p.add_argument('--dll',type=Path,action='append',default=[])
     p.add_argument('--output',type=Path,required=True)
     args=p.parse_args()
@@ -21,14 +22,16 @@ def main():
     with zipfile.ZipFile(args.output,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
         archive.write(args.exe,'yousei-no-tabi.exe')
         archive.write(args.port_archive,'soh.o2r')
+        archive.write(args.visual_setup,'yousei-visual-setup.exe')
         for dll in args.dll:
             if dll.suffix.lower()!='.dll':p.error('DLL inputs must have .dll extension.')
             archive.write(dll,dll.name)
         for item in (ROOT/'runtime').rglob('*'):
-            if item.is_file():archive.write(item,item.relative_to(ROOT/'runtime').as_posix())
+            if item.is_file() and '__pycache__' not in item.parts and item.suffix not in ('.pyc','.pyo'):
+                archive.write(item,item.relative_to(ROOT/'runtime').as_posix())
         for item in (ROOT/'soh/assets/yml').rglob('*'):
             if item.is_file():archive.write(item,'assets/'+item.relative_to(ROOT/'soh/assets/yml').as_posix())
-        for name in ('README.md','docs/ASSET_PROVENANCE.md','docs/RELEASE_AUDIT.md','docs/UPSTREAM.md','docs/VALIDATION.md'):
+        for name in ('README.md','docs/ASSET_PROVENANCE.md','docs/RELEASE_AUDIT.md','docs/UPSTREAM.md','docs/VALIDATION.md','docs/VISUAL_SETUP.md'):
             archive.write(ROOT/name,name)
         for item in (ROOT/'licenses').rglob('*'):
             if item.is_file():archive.write(item,item.relative_to(ROOT).as_posix())

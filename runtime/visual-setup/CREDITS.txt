@@ -1,0 +1,31 @@
+Recommended visual profile for Yousei no Tabi
+
+OoT Reloaded v11.0.0 HD: GhostlyDark and the contributors credited in the
+author's readme and website. Downloaded directly from the author's distribution.
+https://evilgames.eu/texture-packs/oot-reloaded.htm
+https://github.com/GhostlyDark/OoT-Reloaded
+No general redistribution license was found; the pack is not bundled with
+Yousei no Tabi. See the author's website for the full source/credit list.
+
+Djipi's 3DS Experience 6.0.2: Djipi and contributors including MDTa, PurpleHato,
+Mikote111, DanatheElf, MelonSpeedruns and skilarbabcock; full credits on author page:
+https://gamebanana.com/mods/477979
+Published license: https://creativecommons.org/licenses/by-nc-nd/4.0/
+Author checklist explicitly permits downloading and installing, and prohibits
+redistribution on other sites. Downloads use the official file endpoint exposed
+for mod-manager installation. Selected OTR files are installed byte-for-byte.
+The player's optional town repairs are generated locally, not redistributed.
+This profile does not imply endorsement by any texture/mod author.
+
+Local architecture and shop repairs use the player's own downloaded mod files
+and extracted game data. They are for local installation only. Do not upload
+these generated O2Rs or the setup cache/backups as part of a release.
+
+The setup utility obtains an isolated Python 3.14.8 runtime from python.org.
+Its PSF and component notices are retained in the extracted runtime.
+MPQ reading uses mpyq 0.2.5 by Aku Kotkavuo; BSD notice: MPYQ-LICENSE.txt.
+
+This profile matches the private build's HD pack, selected Djipi files, town/shop
+repairs, and lighting/material values. It keeps the original player model and
+music. Separate character, NPC-overhaul, equipment, font, rupee and private model
+mods from the personal build are not part of this profile.

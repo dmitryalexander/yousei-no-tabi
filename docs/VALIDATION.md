@@ -30,7 +30,7 @@ The port archive's three default shaders match the current renderer source.
 The private MM test textures and mod overrides are absent. The package includes
 the extraction recipes required by the upstream first-run checks.
 
-Tested executable SHA256:
+Initial-preview tested executable SHA256:
 `1240a054bef10bd01004ae027bfe948bea80c1730b874a0538a68099643ab716`
 
 Tested port archive SHA256:
@@ -40,3 +40,28 @@ These checks establish representative startup/rendering/control behavior, not
 a manual whole-game walkthrough, a fixed performance guarantee, or testing of
 all optional HD packs. The clean online dependency bootstrap and other operating
 systems were not tested in this offline validation environment.
+# Recommended visual setup checks (2026-10-21)
+
+The Windows companion and in-game menu integration compile successfully. Six
+installer regressions cover settings preservation, interrupted-install recovery,
+undo preserving later controls/saves, bad downloads, restricted HTTPS redirects,
+and duplicate archive names. They pass with the pinned embedded Python runtime.
+The setup window was rendered and visually inspected; argument quoting and the
+manual-import manifest parser were exercised in a compiled companion harness.
+
+The actual installer downloader retrieved both official packs and verified their
+complete SHA-256 hashes. The companion's pinned Python download also passed.
+An isolated installation produced all 14 selected Djipi archives and Reloaded HD
+with the expected hashes. Locally generated town (134 entries) and shop (4 entries)
+repairs match the private reference patch resources exactly; town generation was
+also verified with the isolated embedded interpreter. Undo restored prior visual
+settings and moved the installed mods aside, retaining the generated global
+settings save. No player slot saves were copied or created.
+
+Two additional native fixtures, enhanced Kokiri Forest and Castle Town, completed
+with exit 0, sun/fairy shadow passes and zero shadow overflow. Captures were visually
+inspected. Native fixtures use a temporary debug game state and do not establish
+a whole-game walkthrough, steady target FPS, or identical personal character mods.
+
+
+Preview 2 native-tested executable SHA-256: `230ac2487a8f429ab851d33acc04640cdb91e0ae33339dbf435ed7526e11508a`.

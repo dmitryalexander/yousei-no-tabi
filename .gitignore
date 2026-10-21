@@ -53,3 +53,5 @@ __pycache__/
 .env.*
 *.pem
 *.key
+# Player-only visual downloads, generated patches and settings backups
+.visual-setup/

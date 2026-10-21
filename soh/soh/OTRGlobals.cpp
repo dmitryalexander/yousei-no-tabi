@@ -282,6 +282,12 @@ static bool sohArchiveVersionMatch = false;
 OTRGlobals::OTRGlobals() {
     context = Ship::Context::CreateUninitializedInstance("Yousei no Tabi — Lighting Engine", appShortName,
                                                      "yousei-no-tabi.json");
+    if (std::filesystem::exists(std::filesystem::path(context->GetAppDirectoryPath()) / ".visual-setup/pending.json")) {
+        SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Finish visual setup",
+            "Visual setup was interrupted. Open yousei-visual-setup.exe and retry setup or choose Undo last setup "
+            "before starting the game. Your previous mods and settings are backed up.", nullptr);
+        std::exit(EXIT_FAILURE);
+    }
 
     portArchivePath = Ship::Context::LocateFileAcrossAppDirs("soh.o2r");
     OTRVersion portArchiveVersion = DetectOTRVersion("soh.o2r", false);

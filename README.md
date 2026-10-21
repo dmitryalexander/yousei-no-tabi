@@ -48,6 +48,21 @@ Japanese learning modes. Simulation timing is independent of a low FPS target.
 
 ## Optional textures
 
+On Windows, open **Enhancements → Lighting Engine → Set up recommended visuals...**.
+Save and close the game, then choose **Download and set up** in the companion window.
+It downloads the pinned Reloaded HD and selected Djipi packs from their official
+sources, generates the town/shop repairs locally, and applies the reference lighting
+and material settings. Downloads total about 1.3 GB; allow 12 GiB of free space.
+The existing mods directory is backed up to avoid conflicting load orders. Saves,
+controls, audio settings and the independent FPS target are preserved.
+**Undo last setup** restores the previous mods and visual settings.
+
+The companion can also be opened directly as `yousei-visual-setup.exe`.
+**Use downloaded packs...** imports verified original ZIP/7z files (or the extracted
+Reloaded O2R) when a manual download is needed. Keep the `visual-setup/` folder beside
+the companion. Never publish its player-created `.visual-setup/` cache/backups or
+generated mod files. See [visual setup and permissions](docs/VISUAL_SETUP.md).
+
 Lighting and shadows do not require a bundled texture pack. Material effects
 use decoded textures supplied by the player; some profiles target HD replacement
 names and the appearance varies with the installed pack. Obtain optional packs

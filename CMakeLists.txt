@@ -447,3 +447,15 @@ endif()
 
 set(CPACK_PROJECT_CONFIG_FILE ${CMAKE_SOURCE_DIR}/CMake/Packaging-2.cmake)
 include(CMake/Packaging.cmake)
+
+if(CMAKE_SYSTEM_NAME MATCHES "Windows")
+    set(YOUSEI_VISUAL_SETUP "${CMAKE_BINARY_DIR}/bin/$<UPPER_CASE:$<CONFIG>>/yousei-visual-setup.exe")
+    add_custom_command(OUTPUT "${YOUSEI_VISUAL_SETUP}"
+        COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_BINARY_DIR}/bin/$<UPPER_CASE:$<CONFIG>>"
+        COMMAND powershell.exe -NoProfile -ExecutionPolicy Bypass -File
+            "${CMAKE_SOURCE_DIR}/scripts/build_visual_setup.ps1" -Output "${YOUSEI_VISUAL_SETUP}"
+        DEPENDS tools/VisualSetup.cs scripts/build_visual_setup.ps1
+        VERBATIM COMMENT "Building recommended visual setup companion")
+    add_custom_target(YouseiVisualSetup ALL DEPENDS "${YOUSEI_VISUAL_SETUP}")
+    add_dependencies(soh YouseiVisualSetup)
+endif()
