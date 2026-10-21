@@ -1,8 +1,9 @@
 # Same drawing palette, 256-unit grid and 16-unit stroke as the user's app family.
-param([string]$Output = (Join-Path $PSScriptRoot '..\soh\yousei-lighting.ico'), [string]$Preview)
+param([string]$Output = (Join-Path $PSScriptRoot '..\soh\yousei-lighting.ico'), [string]$Preview, [switch]$Helper)
 $ErrorActionPreference = 'Stop'
 if ($PSVersionTable.PSEdition -eq 'Core') {
     $arguments = @('-NoProfile','-ExecutionPolicy','Bypass','-File',$PSCommandPath,'-Output',$Output)
+    if ($Helper) { $arguments += '-Helper' }
     if ($Preview) { $arguments += @('-Preview',$Preview) }
     & "$env:WINDIR\System32\WindowsPowerShell\v1.0\powershell.exe" @arguments
     exit $LASTEXITCODE
@@ -15,7 +16,7 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.IO;
 public static class YouseiFairyIcon {
-    static byte[] Render(int size) {
+    static byte[] Render(int size, bool helper) {
         using (var bitmap = new Bitmap(size, size)) using (var g = Graphics.FromImage(bitmap)) {
             g.SmoothingMode = SmoothingMode.AntiAlias;
             g.ScaleTransform(size / 256f, size / 256f);
@@ -34,14 +35,15 @@ public static class YouseiFairyIcon {
                     path.AddLines(points); path.CloseFigure(); g.FillPath(fill,path); g.DrawPath(pen,path);
                 }
                 g.FillEllipse(amber,117,144,22,22);
+                if (helper) g.FillEllipse(amber,116,28,24,24);
             }
             using (var stream = new MemoryStream()) { bitmap.Save(stream,ImageFormat.Png); return stream.ToArray(); }
         }
     }
-    public static void Write(string path, string preview) {
+    public static void Write(string path, string preview, bool helper) {
         int[] sizes = {16,20,24,32,40,48,64,128,256};
         byte[][] images = new byte[sizes.Length][];
-        for (int i=0;i<sizes.Length;i++) images[i]=Render(sizes[i]);
+        for (int i=0;i<sizes.Length;i++) images[i]=Render(sizes[i], helper);
         using (var writer = new BinaryWriter(File.Create(path))) {
             writer.Write((ushort)0);writer.Write((ushort)1);writer.Write((ushort)sizes.Length);
             int offset=6+16*sizes.Length;
@@ -56,4 +58,4 @@ public static class YouseiFairyIcon {
     }
 }
 '@
-[YouseiFairyIcon]::Write([IO.Path]::GetFullPath($Output), $(if($Preview){[IO.Path]::GetFullPath($Preview)}else{''}))
+[YouseiFairyIcon]::Write([IO.Path]::GetFullPath($Output), $(if($Preview){[IO.Path]::GetFullPath($Preview)}else{''}), $Helper.IsPresent)

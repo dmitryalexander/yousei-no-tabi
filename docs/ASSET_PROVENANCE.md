@@ -9,7 +9,8 @@
 | `brdf.bin` | Locally generated split-sum BRDF integration lookup |
 | `jelly-detail.bin` | Locally generated seamless Godot FastNoiseLite normal texture; seed 4182 |
 | `shadow.hlsl`, `navi-shadow.hlsl`, `post.hlsl` | Custom lighting shader source from this renderer |
-| `soh/yousei-lighting.ico`, `soh/yousei-fairy.svg` | Fairy based on the user's four-wing sketch; matches the user's Everywhere/Individuous/Pinful amber, dark fill and rounded stroke. Generated locally by `scripts/build_fairy_icon.ps1`; also embedded in the visual setup companion. |
+| `soh/yousei-lighting.ico`, `soh/yousei-fairy.svg` | Fairy based on the user's four-wing sketch; matches the user's Everywhere/Individuous/Pinful amber, dark fill and rounded stroke. Generated locally by `scripts/build_fairy_icon.ps1`. |
+| `soh/yousei-helper.ico`, `soh/yousei-helper.svg` | Same fairy with an amber dot above its center to distinguish the visual setup helper. Generated with `scripts/build_fairy_icon.ps1 -Helper`; embedded in the helper EXE and window. |
 
 Primary asset references:
 

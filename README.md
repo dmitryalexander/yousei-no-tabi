@@ -25,8 +25,8 @@ or a fixed frame rate on every system.
 
 ### Windows quick start
 
-1. Open [Preview 3](https://github.com/dmitryalexander/yousei-no-tabi/releases/tag/v0.1.0-preview.3)
-   and download **yousei-no-tabi-Windows-x64-v0.1.0-preview.3.zip**. Choose the Windows
+1. Open [Preview 4](https://github.com/dmitryalexander/yousei-no-tabi/releases/tag/v0.1.0-preview.4)
+   and download **yousei-no-tabi-Windows-x64-v0.1.0-preview.4.zip**. Choose the Windows
    ZIP under Assets; GitHub's Source code ZIP is for building the program yourself.
 2. Extract the **entire ZIP** into a new folder. Run `Play Yousei no Tabi.cmd` or
    `yousei-no-tabi.exe`, then follow the first-run prompt to extract your supported ROM.

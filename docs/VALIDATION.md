@@ -80,3 +80,11 @@ managed icon resource matches the full source ICO byte-for-byte, and its window
 Icon property was instantiated and inspected. This changes branding and icon
 build dependencies; gameplay and installer behavior retain the preceding preview's
 validation. Whole-game gameplay tests were not repeated for this artwork change.
+
+## Preview 4 packaging refresh
+
+The visual setup helper uses a separate fairy icon with an amber dot. Its EXE
+and window icons were extracted and checked; the embedded ICO matches source.
+Bundled instructions use the corrected UTF-8 menu arrows and punctuation.
+This artwork/documentation refresh retains the preceding functional validation;
+whole-game and installation flows were not repeated for this change.

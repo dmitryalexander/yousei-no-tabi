@@ -58,4 +58,6 @@ The fairy icon source is `soh/yousei-fairy.svg`. Regenerate its multiresolution
 Windows ICO with `powershell -File scripts/build_fairy_icon.ps1`. The generator
 uses the reference app family palette and 16-unit rounded stroke on a 256-unit
 grid, with 16/20/24/32/40/48/64/128/256-pixel frames. Both the game and visual setup
-companion embed the same ICO.
+companion use separate ICOs: the helper adds an amber dot above the fairy.
+Regenerate it with `powershell -File scripts/build_fairy_icon.ps1 -Helper -Output soh/yousei-helper.ico`.
+Its matching vector source is `soh/yousei-helper.svg`.
