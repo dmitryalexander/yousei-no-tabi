@@ -4,6 +4,40 @@ The Windows menu button opens a separate setup window so the player can save and
 close the game before installing. No download begins just from opening the window.
 The player chooses Download and set up, then Start game after successful installation.
 
+## Step-by-step setup
+
+1. Download the **Windows x64 ZIP** from [Preview 2](https://github.com/dmitryalexander/yousei-no-tabi/releases/tag/v0.1.0-preview.2),
+   extract it completely, and run `Play Yousei no Tabi.cmd`.
+2. Supply your supported ROM when prompted. Finish extraction before using visual setup.
+3. Press **F1 / Escape** and open **Enhancements → Lighting Engine → Set up recommended visuals...**.
+4. Save and close the game. The separate setup window can stay open.
+5. Click **Download and set up**. It needs about 1.3 GB of downloads and 12 GiB free
+   on the game drive. No system Python installation or manual mod copying is required.
+6. Wait for the installation success message, then click **Start game**.
+
+You can instead open `yousei-visual-setup.exe` directly from the extracted game folder.
+Keep its `visual-setup/` folder alongside it. Opening setup alone does not download anything.
+
+## Troubleshooting
+
+- **The menu button is missing:** use Preview 2 or newer. Preview 1 does not include it.
+- **Setup says to close the game:** save and exit all Yousei no Tabi instances, then try again.
+- **No extracted game archive:** run the game and complete ROM extraction first.
+- **Download unavailable or blocked:** open the author links in the setup window and
+  download the matching versions. Click **Use downloaded packs...** and select the
+  original `oot-reloaded-v11.0.0-soh-o2r-hd.7z` and
+  `djipi_s_3ds_experience_tot_fix.zip`, then click **Download and set up**. Verified
+  cached downloads are reused. Different versions are rejected rather than installed.
+- **Windows cannot extract the 7z:** extract it with a compatible archive tool, import
+  `OoT_Reloaded_v11.0.0_HD.o2r` through **Use downloaded packs...**, and retry setup.
+- **Checksum changed:** do not rename or bypass verification. Check for an updated
+  Yousei no Tabi recipe; setup is pinned to the audited pack versions.
+- **Setup was cancelled or interrupted:** reopen the companion and retry setup or
+  choose **Undo last setup** before starting the game. Keep the `.visual-setup/`
+  directory so the previous installation can be recovered.
+- **Return to your previous setup:** close the game and choose **Undo last setup**.
+  It restores previous mods and visual settings while preserving saves and unrelated settings.
+
 ## Sources checked on 2026-10-21
 
 | Input | Local download route | Redistribution finding |

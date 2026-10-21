@@ -23,6 +23,30 @@ or a fixed frame rate on every system.
 
 ## Setup
 
+### Windows quick start
+
+1. Open [Preview 2](https://github.com/dmitryalexander/yousei-no-tabi/releases/tag/v0.1.0-preview.2)
+   and download **yousei-no-tabi-Windows-x64-v0.1.0-preview.2.zip**. Choose the Windows
+   ZIP under Assets; GitHub's Source code ZIP is for building the program yourself.
+2. Extract the **entire ZIP** into a new folder. Run `Play Yousei no Tabi.cmd` or
+   `yousei-no-tabi.exe`, then follow the first-run prompt to extract your supported ROM.
+3. For the recommended HD look, press **F1 / Escape**, then open
+   **Enhancements → Lighting Engine → Set up recommended visuals...**.
+4. The setup window opens separately. **Save and close the game**, leaving setup open.
+5. Click **Download and set up**. Allow about **1.3 GB of downloads** and **12 GiB of
+   free disk space**. Wait for the successful installation message, then click **Start game**.
+
+The setup automatically downloads Reloaded HD and selected Djipi files from their
+official sources, builds the town/shop repairs locally, and sets the load order and
+lighting/material profile. Keep the included `lighting/`, `assets/`, `visual-setup/`
+folders and both executables together. Existing mods are backed up; saves and controls
+are preserved. **Undo last setup** restores the previous mods and visual settings.
+
+The download, install and undo flows were tested, along with native Kokiri Forest
+and Castle Town scenes. Testing has not covered a whole-game walkthrough. This
+preset retains Link and the original music; private character/equipment cosmetics
+are separate. See [troubleshooting and manual import](docs/VISUAL_SETUP.md#troubleshooting).
+
 Provide your own legally obtained, supported Ocarina of Time ROM. No ROM,
 extracted game archive, HD pack, character mod, replacement music, or Japanese
 dialogue/voice package is included. Follow the extraction prompt on first run.
